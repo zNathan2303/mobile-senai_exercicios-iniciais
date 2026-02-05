@@ -1,11 +1,8 @@
 fun idade(idade: Int) {
-    if (idade in 1..12) {
-        println("Criança")
-    } else if (idade in 12 .. 17 ){
-        println("Adolescente")
-    } else if (idade in 18 .. 59) {
-        println("Adulto")
-    } else if (idade > 60) {
-        println("Idoso")
+    when (idade) {
+        in 0..11 -> println("Criança")
+        in 12 .. 17 -> println("Adolescente")
+        in 18 .. 59 -> println("Adulto")
+        else -> if (idade > 59) println("Idoso") else println("Idade invalida")
     }
 }

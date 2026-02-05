@@ -1,5 +1,5 @@
 fun maiorNumeroArray(array : Array<Int>) {
-    var maiorNumero = 0
+    var maiorNumero = array[0]
     for (numero in array) {
         if (numero > maiorNumero) {
             maiorNumero = numero
